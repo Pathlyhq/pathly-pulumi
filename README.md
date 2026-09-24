@@ -1,4 +1,4 @@
-# @pathlyhq/pulumi
+# @pathly/pulumi
 
 **English** · [Français](README.fr.md) · [Español](README.es.md)
 
@@ -17,9 +17,9 @@ Mirrors the Terraform `pathly_*` resources for declarative HTTP checks, webhooks
 ## Install
 
 ```bash
-npm install @pathlyhq/pulumi @pulumi/pulumi
+npm install @pathly/pulumi @pulumi/pulumi
 # or
-yarn add @pathlyhq/pulumi @pulumi/pulumi
+yarn add @pathly/pulumi @pulumi/pulumi
 ```
 
 Set the organization API token (recommended via environment, not committed config):
@@ -53,7 +53,7 @@ Browser scenarios with `fill` / `http_auth` steps can hold passwords. This provi
 ## TypeScript example
 
 ```ts
-import * as pathly from "@pathlyhq/pulumi";
+import * as pathly from "@pathly/pulumi";
 
 const home = new pathly.Scenario("home", {
   name: "Home page",
@@ -113,7 +113,7 @@ Minimal HTTP-only Python stack (no npm provider runtime) is also possible by wra
 ```python
 # examples/python/__main__.py — uses PATHLY_API_TOKEN via Node dynamic provider
 """
-Requires: pulumi, node, and @pathlyhq/pulumi linked from the parent package.
+Requires: pulumi, node, and @pathly/pulumi linked from the parent package.
 """
 import pulumi
 import pulumi_pathly as pathly  # generated / vendored shim — see examples/python
@@ -147,7 +147,7 @@ npm run build
 |---|---|
 | [pathly-terraform-provider](https://github.com/pathlyhq/pathly-terraform-provider) | Terraform / OpenTofu |
 | [pathly-cdktf](https://github.com/pathlyhq/pathly-cdktf) | CDK for Terraform |
-| [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | @pathlyhq/sdk |
+| [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | @pathly/sdk |
 | [pathly-crossplane](https://github.com/pathlyhq/pathly-crossplane) | Crossplane |
 | [Pathly product](https://pathlyhq.com) | [Pathly monitoring](https://pathlyhq.com) |
 ## About Pathly

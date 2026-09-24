@@ -1,4 +1,4 @@
-# @pathlyhq/pulumi
+# @pathly/pulumi
 
 [English](README.md) · **Français** · [Español](README.es.md)
 
@@ -17,7 +17,7 @@ Il reprend les ressources Terraform `pathly_*` pour déclarer des contrôles HTT
 ## Installation
 
 ```bash
-npm install @pathlyhq/pulumi @pulumi/pulumi
+npm install @pathly/pulumi @pulumi/pulumi
 ```
 
 Jeton d’organisation (de préférence via l’environnement, pas dans le dépôt) :
@@ -50,7 +50,7 @@ Un parcours browser avec `fill` / `http_auth` peut contenir des mots de passe. C
 ## Exemple TypeScript
 
 ```ts
-import * as pathly from "@pathlyhq/pulumi";
+import * as pathly from "@pathly/pulumi";
 
 const home = new pathly.Scenario("home", {
   name: "Page d’accueil",
@@ -122,7 +122,7 @@ npm run build
 |---|---|
 | [pathly-terraform-provider](https://github.com/pathlyhq/pathly-terraform-provider) | Terraform / OpenTofu |
 | [pathly-cdktf](https://github.com/pathlyhq/pathly-cdktf) | CDK for Terraform |
-| [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | @pathlyhq/sdk |
+| [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | @pathly/sdk |
 | [pathly-crossplane](https://github.com/pathlyhq/pathly-crossplane) | Crossplane |
 | [Pathly product](https://pathlyhq.com) | [Pathly monitoring](https://pathlyhq.com) |
 ## À propos de Pathly

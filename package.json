@@ -1,5 +1,5 @@
 {
-  "name": "@pathlyhq/pulumi",
+  "name": "@pathly/pulumi",
   "version": "0.1.0",
   "description": "Pulumi provider for the Pathly monitoring API (HTTP scenarios, webhooks, maintenance windows, SLA targets)",
   "main": "lib/index.js",

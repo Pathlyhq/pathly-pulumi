@@ -1,0 +1,14 @@
+{
+  "name": "pathly-ts-example",
+  "private": true,
+  "main": "index.ts",
+  "dependencies": {
+    "@pathlyhq/pulumi": "file:../..",
+    "@pulumi/pulumi": "^3.140.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.0",
+    "ts-node": "^10.9.2"
+  }
+}

@@ -1,0 +1,43 @@
+stages:
+  - test
+  - build
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+cache:
+  key: "${CI_COMMIT_REF_SLUG}"
+  paths:
+    - .npm/
+    - node_modules/
+
+test:
+  stage: test
+  image: node:22-bookworm
+  script:
+    - npm ci
+    - npm test
+  coverage: '/All files[^|]*\|[^|]*\s+([\d\.]+)/'
+  artifacts:
+    when: always
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/lcov.info
+    paths:
+      - coverage/
+    expire_in: 1 week
+
+build:
+  stage: build
+  image: node:22-bookworm
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - lib/
+    expire_in: 1 week
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"

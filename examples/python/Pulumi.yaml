@@ -1,0 +1,3 @@
+name: pathly-py-example
+runtime: python
+description: Pathly Pulumi Python example (HTTP helpers using the public API)

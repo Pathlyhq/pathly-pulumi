@@ -1,0 +1,7 @@
+{
+  "name": "@pathlyhq/pulumi-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "description": "Thin re-export of @pathlyhq/pulumi for multi-language SDK layouts"
+}

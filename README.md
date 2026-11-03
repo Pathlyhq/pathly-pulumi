@@ -145,7 +145,7 @@ npm run build
 
 | Package | Role |
 |---|---|
-| [pathly-terraform-provider](https://github.com/pathlyhq/pathly-terraform-provider) | Terraform / OpenTofu |
+| [terraform-provider-pathly](https://github.com/Pathlyhq/terraform-provider-pathly) | Terraform / OpenTofu |
 | [pathly-cdktf](https://github.com/pathlyhq/pathly-cdktf) | CDK for Terraform |
 | [pathly-sdk-typescript](https://github.com/pathlyhq/pathly-sdk-typescript) | @pathly/sdk |
 | [pathly-crossplane](https://github.com/pathlyhq/pathly-crossplane) | Crossplane |

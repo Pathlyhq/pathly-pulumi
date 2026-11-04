@@ -20,7 +20,7 @@
   ],
   "homepage": "https://pathlyhq.com",
   "bugs": {
-    "url": "https://github.com/pathlyhq/pathly-pulumi/issues"
+    "url": "https://github.com/Pathlyhq/pathly-pulumi/issues"
   },
   "keywords": [
     "pathly",
@@ -41,7 +41,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pathlyhq/pathly-pulumi.git"
+    "url": "https://github.com/Pathlyhq/pathly-pulumi.git"
   },
   "engines": {
     "node": ">=18"

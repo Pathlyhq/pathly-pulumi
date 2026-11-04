@@ -236,7 +236,7 @@ export class Client {
     this.token = opts.token.trim();
     this.fetchFn = opts.fetchFn ?? fetch;
     this.sleep = opts.sleep ?? defaultSleep;
-    this.userAgent = opts.userAgent ?? "pathly-pulumi/0.1.0";
+    this.userAgent = opts.userAgent ?? "pathly-pulumi/0.1.0"; // x-release-please-version
   }
 
   private async do<T = void>(r: RequestOpts): Promise<T> {
